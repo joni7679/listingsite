@@ -31,16 +31,14 @@
 
 .my-nav-bar {
     z-index: 33;
+    position: absolute;
 }
 
 .banner-sectoion {
-
     position: relative;
-    top: -7px;
-    position: absolute;
     width: 100%;
     height: 100vh;
-    background-image: url("../img/banner.jpg");
+    background-image: url(../img/banner.jpg);
     background-size: cover;
     background-position: center;
     text-transform: capitalize;
@@ -116,4 +114,53 @@ input[type="search"] {
     outline: none;
     padding: 10px 25px;
     border-radius: 15px;
+}
+
+/*  */
+
+.categories-section {
+    text-transform: capitalize;
+}
+
+.categories-img {
+    width: 50px;
+}
+
+.catgories {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+  
+}
+
+.categories span {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 25px;
+}
+
+/* media query code  */
+@media (max-width:750px) {
+    .searbar-section {
+        margin-left: -22px;
+        flex-direction: column;
+    }
+
+    .location {
+        margin: 20px 0;
+    }
+
+    .searchbar {
+
+        margin: 20px 0;
+
+    }
+
+
+
 }
