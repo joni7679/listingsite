@@ -18,52 +18,129 @@ body {
 .call-links {
     z-index: 3;
     left: 3%;
-    top: 76%;
+    top: 80%;
     position: fixed;
 }
 
-.call-div img{
+.call-div img {
     width: 50px;
     cursor: pointer;
 }
-.call img{
+
+.call img {
     width: 30px;
 }
 
-.links-img{
+.links-img {
     width: 20px;
 }
-.sec-link{
-    margin-top: -41px;
-    margin-left: 67px;
-    position: absolute;
-}
 
-.first-link{
-    margin-top: -62px;
+
+
+.sec-link {
     position: absolute;
     opacity: 0;
-    
+    transition: 0.2s linear;
 }
-.thried-link{
+
+.first-link {
     position: absolute;
-    margin-top: 54px;
+    opacity: 0;
+    transition: 0.2s linear;
+
 }
-.links{
+
+.showfirstlink {
+    opacity: 1;
+    margin-top: -62px;
+    transition: 0.2s linear;
+}
+
+
+.showseclink {
+    opacity: 1;
+    margin-top: -41px;
+    margin-left: 67px;
+    transition: 0.2s linear;
+
+}
+
+.thried-link {
+    position: absolute;
+    opacity: 0;
+}
+
+.showthridelink {
+    margin-top: 54px;
+    opacity: 1;
+    transition: 0.2s linear;
+}
+
+.links {
     top: -100px;
     display: flex;
     align-items: center;
     gap: 25px;
 }
-.call-div{
+
+.call-div {
     position: relative;
 }
+
+/* cta button code  */
+.ctalinks-box {
+
+    width: fit-content;
+    position: fixed;
+    bottom: 30px;
+    left: 25px;
+    z-index: 33;
+    cursor: pointer;
+}
+
+.ctalink {
+    width: 50px;
+}
+
+.sub-ctalink {
+    width: 25px;
+}
+
+.sub-ctalinks-box {
+    position: relative;
+    display: none;
+    opacity: 0;
+    transition: 0.2s linear;
+}
+
+.sub-ctalink {
+    transition: 0.2s linear;
+    position: absolute;
+}
+
+
+.sub-ctalink1 {
+    top: -7rem;
+}
+
+.sub-ctalink2 {
+    top: -6rem;
+    left: 3rem;
+
+}
+
+.sub-ctalink3 {
+    left: 4rem;
+    bottom: 9px;
+}
+
 .logo {
     color: #fff !important;
     font-size: 50px;
     font-weight: 600;
     text-transform: uppercase;
 }
+
 
 .nav-link {
     color: #fff !important;
@@ -201,10 +278,12 @@ input[type="search"] {
     font-size: 20px;
     font-weight: 600;
 }
-.aboutas-section{
+
+.aboutas-section {
 
     margin-top: 60px;
 }
+
 /* media query code  */
 @media (max-width:750px) {
     .searbar-section {

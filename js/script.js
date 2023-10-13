@@ -1,18 +1,27 @@
 
-var mainCall = document.querySelector("#calldiv");
+let ctalinksBox = document.querySelector(".ctalinks-box");
+let subCtaBox = document.querySelector(".sub-ctalinks-box");
+let subCtaLink = document.querySelector(".sub-ctalink");
+let btnstatus = false;
+ctalinksBox.addEventListener("click", function() {
 
-mainCall.onclick = function call() {
-    var firstlink = document.querySelector(".first-link");
-    var check = 0;
-    // console.log("hi")
-    if( check == 0 ){
-        firstlink.style.opacity = "1";
-        check=1;
-    }
-    else{
-        firstlink.style.opacity = "0";
-        check=0;
+    if (btnstatus === false) {
+        subCtaBox.style.display = "block";
+        subCtaBox.style.opacity = "1";
+        subCtaLink.style.transition="0.2s linear";
+        btnstatus = true;
 
     }
-}
+    else {
+        subCtaBox.style.display = "none";
+        subCtaBox.style.opacity = "0";
+        subCtaLink.style.transition="0.2s linear";
+        btnstatus = false;
+
+    }
+
+})
+
+
+
 
